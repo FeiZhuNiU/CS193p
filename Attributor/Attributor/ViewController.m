@@ -5,7 +5,7 @@
 //  Created by ericyu on 2/11/15.
 //  Copyright (c) 2015 eric. All rights reserved.
 //
-
+#import "TextStatsViewController.h"
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -16,6 +16,16 @@
 @end
 
 @implementation ViewController
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"Analyze Text"]) {
+        if ([segue.destinationViewController isKindOfClass:[TextStatsViewController class]]) {
+            TextStatsViewController* tsvc=(TextStatsViewController*)segue.destinationViewController;
+            tsvc.text = self.body.textStorage;
+        }
+    }
+}
 
 - (IBAction)changeBodyColorButton:(UIButton *)sender
 {

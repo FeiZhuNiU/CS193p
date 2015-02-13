@@ -14,6 +14,7 @@
 		AED474591A8C618200CEE2A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED474581A8C618200CEE2A5 /* Images.xcassets */; };
 		AED4745C1A8C618200CEE2A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AED4745A1A8C618200CEE2A5 /* LaunchScreen.xib */; };
 		AED474681A8C618200CEE2A5 /* AttributorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AED474671A8C618200CEE2A5 /* AttributorTests.m */; };
+		AED8DF561A8E55D4004E61EB /* TextStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AED8DF551A8E55D4004E61EB /* TextStatsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		AED474611A8C618200CEE2A5 /* AttributorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttributorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED474661A8C618200CEE2A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AED474671A8C618200CEE2A5 /* AttributorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributorTests.m; sourceTree = "<group>"; };
+		AED8DF541A8E55D4004E61EB /* TextStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextStatsViewController.h; sourceTree = "<group>"; };
+		AED8DF551A8E55D4004E61EB /* TextStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextStatsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				AED474521A8C618200CEE2A5 /* ViewController.h */,
 				AED474531A8C618200CEE2A5 /* ViewController.m */,
 				AED474551A8C618200CEE2A5 /* Main.storyboard */,
+				AED8DF541A8E55D4004E61EB /* TextStatsViewController.h */,
+				AED8DF551A8E55D4004E61EB /* TextStatsViewController.m */,
 				AED474581A8C618200CEE2A5 /* Images.xcassets */,
 				AED4745A1A8C618200CEE2A5 /* LaunchScreen.xib */,
 				AED4744B1A8C618200CEE2A5 /* Supporting Files */,
@@ -222,6 +227,7 @@
 				AED474541A8C618200CEE2A5 /* ViewController.m in Sources */,
 				AED474511A8C618200CEE2A5 /* AppDelegate.m in Sources */,
 				AED4744E1A8C618200CEE2A5 /* main.m in Sources */,
+				AED8DF561A8E55D4004E61EB /* TextStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +420,7 @@
 				AED4746D1A8C618200CEE2A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AED4746E1A8C618200CEE2A5 /* Build configuration list for PBXNativeTarget "AttributorTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				AED474701A8C618200CEE2A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
