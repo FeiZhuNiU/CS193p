@@ -47,15 +47,35 @@
     int score = 0;
     if([otherCards count] == 1){
         PlayingCard* othercard = [otherCards firstObject];
-        if(self.rank == othercard.rank){
-            score = 4;
-        }
-        else if([self.suit isEqualToString:othercard.suit]){
-            score = 1;
-        }
+        score = [PlayingCard matchTwoCards:self anotherCard:othercard];
+    }
+    else if([otherCards count] == 3){
+        int score1 = [PlayingCard matchTwoCards:otherCards[0] anotherCard:otherCards[1]];
+        int score2 = [PlayingCard matchTwoCards:otherCards[0] anotherCard:otherCards[2]];
+        if(score1 == 0)
+            score=score2;
+        else if(score2 == 0)
+            score = score1;
+        else if(score1 == score2)
+            score = score1*score2;
+        else
+            score = 2*(score1+score2);
     }
     
+    
     return score;
+}
+
++(int) matchTwoCards:(PlayingCard*)card1 anotherCard:(PlayingCard*) card2{
+    if(card1.rank == card2.rank){
+        if([card1.suit isEqualToString:card2.suit])
+            return 8;
+        return 4;
+    }
+    if ([card1.suit isEqualToString:card2.suit]) {
+        return 1;
+    }
+    return 0;
 }
 
 @end
