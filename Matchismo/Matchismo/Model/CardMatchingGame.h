@@ -15,12 +15,17 @@
 -(instancetype) initWithCardCount:(NSUInteger)count usingDeck:(Deck*)deck;
 
 
--(void) chooseCardAtIndex:(NSUInteger)index;
+-(void) chooseCardAtIndex:(NSUInteger)index; //abstract
+-(void) formatResult:(NSArray*)cards matchScore:(NSInteger)matchScore; //abstract
+@property(nonatomic,strong) NSMutableArray* cardsChosed;//abstract;
 
 -(Card*) cardAtIndex:(NSUInteger)index;
 
-@property(nonatomic,readonly) NSInteger score;
-@property(nonatomic) NSInteger gameMode;
+@property(nonatomic) NSInteger score;
+
 @property(nonatomic,strong) NSString* result;
+
+
+@property(nonatomic,strong) NSMutableArray* cards;// of card
 
 @end
