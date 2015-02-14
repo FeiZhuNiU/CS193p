@@ -12,13 +12,12 @@
 
 @end
 
+@implementation PlayingCardMatchingGame
 
 static const int MATCH_BONUS = 4;
 static const int MISMATCH_PENALTY = 2;
 static const int COST_TO_CHOOSE = 1;
 
-
-@implementation PlayingCardMatchingGame
 -(void)chooseCardAtIndex:(NSUInteger)index
 {
     int matchScore = 0;
