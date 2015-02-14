@@ -74,24 +74,27 @@ static const int COST_TO_CHOOSE = 1;
         self.result =[NSString stringWithFormat:@"Result: %@",((Card*)cards[0]).contents];
     }
     else if([cards count]==2){
-        
+        self.result =[NSString stringWithFormat:@"Result: %@ %@",((Card*)cards[0]).contents,((Card*)cards[1]).contents];
+    }
+    else if([cards count]==3){
         if(matchScore){
-            self.result =[NSString stringWithFormat:@"Result: Matched %@ %@ for %ld points.",
+            self.result =[NSString stringWithFormat:@"Result: Matched %@ %@ %@ for %ld points.",
                           ((Card*)cards[0]).contents,
                           ((Card*)cards[1]).contents,
+                          ((Card*)cards[2]).contents,
                           (long)matchScore];
-            self.cardsChosed = nil;
         }
         else{
-            self.result =[NSString stringWithFormat:@"Result: %@ %@ don't match!",
+            self.result =[NSString stringWithFormat:@"Result: %@ %@ %@ don't match!",
                           ((Card*)cards[0]).contents,
-                          ((Card*)cards[1]).contents];
-            [self.cardsChosed removeObjectAtIndex:0];
+                          ((Card*)cards[1]).contents,
+                          ((Card*)cards[2]).contents];
         }
     }
-    else
+
+    else{
         self.result=nil;
-    
+    }
     return;
 }
 
