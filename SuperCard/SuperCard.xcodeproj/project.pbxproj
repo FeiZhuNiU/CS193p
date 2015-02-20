@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEED79341A935BB900A7420E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED79331A935BB900A7420E /* main.m */; };
+		AEED79371A935BB900A7420E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED79361A935BB900A7420E /* AppDelegate.m */; };
+		AEED793A1A935BB900A7420E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED79391A935BB900A7420E /* ViewController.m */; };
+		AEED793D1A935BB900A7420E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEED793B1A935BB900A7420E /* Main.storyboard */; };
+		AEED793F1A935BB900A7420E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEED793E1A935BB900A7420E /* Images.xcassets */; };
+		AEED79421A935BB900A7420E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEED79401A935BB900A7420E /* LaunchScreen.xib */; };
+		AEED794E1A935BB900A7420E /* SuperCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED794D1A935BB900A7420E /* SuperCardTests.m */; };
+		AEED79591A937AF400A7420E /* PlayingCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEED79581A937AF400A7420E /* PlayingCardView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEED79481A935BB900A7420E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEED79261A935BB900A7420E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEED792D1A935BB900A7420E;
+			remoteInfo = SuperCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AEED792E1A935BB900A7420E /* SuperCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEED79321A935BB900A7420E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEED79331A935BB900A7420E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEED79351A935BB900A7420E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AEED79361A935BB900A7420E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AEED79381A935BB900A7420E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AEED79391A935BB900A7420E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AEED793C1A935BB900A7420E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AEED793E1A935BB900A7420E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AEED79411A935BB900A7420E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AEED79471A935BB900A7420E /* SuperCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEED794C1A935BB900A7420E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEED794D1A935BB900A7420E /* SuperCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperCardTests.m; sourceTree = "<group>"; };
+		AEED79571A937AF400A7420E /* PlayingCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardView.h; sourceTree = "<group>"; };
+		AEED79581A937AF400A7420E /* PlayingCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEED792B1A935BB900A7420E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEED79441A935BB900A7420E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEED79251A935BB900A7420E = {
+			isa = PBXGroup;
+			children = (
+				AEED79301A935BB900A7420E /* SuperCard */,
+				AEED794A1A935BB900A7420E /* SuperCardTests */,
+				AEED792F1A935BB900A7420E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEED792F1A935BB900A7420E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEED792E1A935BB900A7420E /* SuperCard.app */,
+				AEED79471A935BB900A7420E /* SuperCardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEED79301A935BB900A7420E /* SuperCard */ = {
+			isa = PBXGroup;
+			children = (
+				AEED79381A935BB900A7420E /* ViewController.h */,
+				AEED79391A935BB900A7420E /* ViewController.m */,
+				AEED793B1A935BB900A7420E /* Main.storyboard */,
+				AEED79571A937AF400A7420E /* PlayingCardView.h */,
+				AEED79581A937AF400A7420E /* PlayingCardView.m */,
+				AEED793E1A935BB900A7420E /* Images.xcassets */,
+				AEED79401A935BB900A7420E /* LaunchScreen.xib */,
+				AEED79311A935BB900A7420E /* Supporting Files */,
+			);
+			path = SuperCard;
+			sourceTree = "<group>";
+		};
+		AEED79311A935BB900A7420E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEED79351A935BB900A7420E /* AppDelegate.h */,
+				AEED79361A935BB900A7420E /* AppDelegate.m */,
+				AEED79321A935BB900A7420E /* Info.plist */,
+				AEED79331A935BB900A7420E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEED794A1A935BB900A7420E /* SuperCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEED794D1A935BB900A7420E /* SuperCardTests.m */,
+				AEED794B1A935BB900A7420E /* Supporting Files */,
+			);
+			path = SuperCardTests;
+			sourceTree = "<group>";
+		};
+		AEED794B1A935BB900A7420E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEED794C1A935BB900A7420E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEED792D1A935BB900A7420E /* SuperCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEED79511A935BB900A7420E /* Build configuration list for PBXNativeTarget "SuperCard" */;
+			buildPhases = (
+				AEED792A1A935BB900A7420E /* Sources */,
+				AEED792B1A935BB900A7420E /* Frameworks */,
+				AEED792C1A935BB900A7420E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperCard;
+			productName = SuperCard;
+			productReference = AEED792E1A935BB900A7420E /* SuperCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEED79461A935BB900A7420E /* SuperCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEED79541A935BB900A7420E /* Build configuration list for PBXNativeTarget "SuperCardTests" */;
+			buildPhases = (
+				AEED79431A935BB900A7420E /* Sources */,
+				AEED79441A935BB900A7420E /* Frameworks */,
+				AEED79451A935BB900A7420E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEED79491A935BB900A7420E /* PBXTargetDependency */,
+			);
+			name = SuperCardTests;
+			productName = SuperCardTests;
+			productReference = AEED79471A935BB900A7420E /* SuperCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEED79261A935BB900A7420E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = eric;
+				TargetAttributes = {
+					AEED792D1A935BB900A7420E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					AEED79461A935BB900A7420E = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = AEED792D1A935BB900A7420E;
+					};
+				};
+			};
+			buildConfigurationList = AEED79291A935BB900A7420E /* Build configuration list for PBXProject "SuperCard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEED79251A935BB900A7420E;
+			productRefGroup = AEED792F1A935BB900A7420E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEED792D1A935BB900A7420E /* SuperCard */,
+				AEED79461A935BB900A7420E /* SuperCardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEED792C1A935BB900A7420E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEED793D1A935BB900A7420E /* Main.storyboard in Resources */,
+				AEED79421A935BB900A7420E /* LaunchScreen.xib in Resources */,
+				AEED793F1A935BB900A7420E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEED79451A935BB900A7420E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEED792A1A935BB900A7420E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEED793A1A935BB900A7420E /* ViewController.m in Sources */,
+				AEED79591A937AF400A7420E /* PlayingCardView.m in Sources */,
+				AEED79371A935BB900A7420E /* AppDelegate.m in Sources */,
+				AEED79341A935BB900A7420E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEED79431A935BB900A7420E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEED794E1A935BB900A7420E /* SuperCardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEED79491A935BB900A7420E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEED792D1A935BB900A7420E /* SuperCard */;
+			targetProxy = AEED79481A935BB900A7420E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AEED793B1A935BB900A7420E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEED793C1A935BB900A7420E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AEED79401A935BB900A7420E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEED79411A935BB900A7420E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEED794F1A935BB900A7420E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AEED79501A935BB900A7420E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEED79521A935BB900A7420E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SuperCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AEED79531A935BB900A7420E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SuperCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AEED79551A935BB900A7420E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SuperCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperCard.app/SuperCard";
+			};
+			name = Debug;
+		};
+		AEED79561A935BB900A7420E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SuperCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperCard.app/SuperCard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEED79291A935BB900A7420E /* Build configuration list for PBXProject "SuperCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEED794F1A935BB900A7420E /* Debug */,
+				AEED79501A935BB900A7420E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEED79511A935BB900A7420E /* Build configuration list for PBXNativeTarget "SuperCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEED79521A935BB900A7420E /* Debug */,
+				AEED79531A935BB900A7420E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AEED79541A935BB900A7420E /* Build configuration list for PBXNativeTarget "SuperCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEED79551A935BB900A7420E /* Debug */,
+				AEED79561A935BB900A7420E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEED79261A935BB900A7420E /* Project object */;
+}
