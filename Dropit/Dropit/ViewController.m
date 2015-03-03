@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "DropitBehavior.h"
 
-@interface ViewController ()
+@interface ViewController () <UIDynamicAnimatorDelegate>
 @property (weak, nonatomic) IBOutlet UIView *gameView;
 @property(strong,nonatomic)UIDynamicAnimator* animator;
 @property(strong,nonatomic)DropitBehavior* dropitBehavior;
@@ -23,9 +23,75 @@ static const CGSize DROP_SIZE = {40,40};
 -(UIDynamicAnimator*)animator{
     if(!_animator){
         _animator = [[UIDynamicAnimator alloc]initWithReferenceView:self.gameView];
+        _animator.delegate = self;
     }
     return _animator;
 }
+
+-(void)dynamicAnimatorDidPause:(UIDynamicAnimator *)animator{
+    [self removeCompleteRows];
+}
+
+-(void)removeCompleteRows{
+    NSMutableArray* dropsToRemove = [[NSMutableArray alloc] init];
+    
+    for (CGFloat y = self.gameView.bounds.size.height - DROP_SIZE.height/2; y>0; y-=DROP_SIZE.height) {
+        BOOL rowsIsComplete = YES;
+        
+        NSMutableArray* dropsFound = [[NSMutableArray alloc]init];
+        
+        for (CGFloat x = DROP_SIZE.width/2; x<=self.gameView.bounds.size.width-DROP_SIZE.width/2; x+=DROP_SIZE.width) {
+            UIView* hitView = [self.gameView hitTest:CGPointMake(x, y) withEvent:NULL];
+            if([hitView superview] == self.gameView){
+                [dropsFound addObject:hitView];
+            }
+            else{
+                rowsIsComplete = NO;
+                break;
+            }
+        }
+        if (![dropsFound count]) {
+            break;
+        }
+        
+        if (!rowsIsComplete) {
+            continue;
+        }
+        else{
+            [dropsToRemove addObjectsFromArray:dropsFound];
+        }
+    }
+    
+    if([dropsToRemove count]){
+        for(UIView* drop in dropsToRemove){
+            [self.dropitBehavior removeItem:drop];
+        }
+        [self animateRemovingDrops:dropsToRemove];
+    }
+    
+}
+
+-(void)animateRemovingDrops:(NSArray*)dropsToRemove{
+    [UIView animateWithDuration:1.0
+                     animations:^{
+                         for(UIView* drop in dropsToRemove){
+                             int x= (arc4random()%(int)(self.gameView.bounds.size.width*5))-(int)self.gameView.bounds.size.width*2;
+                             int y = self.gameView.bounds.size.height;
+                             
+                             drop.center=CGPointMake(x, -y);
+                         }
+                     }
+                     completion:^(BOOL finished){
+                         [dropsToRemove makeObjectsPerformSelector:@selector(removeFromSuperview)];
+                     
+                     }];
+}
+
+
+
+
+
+
 -(DropitBehavior*)dropitBehavior{
     if(!_dropitBehavior){
         _dropitBehavior = [[DropitBehavior alloc] init];
