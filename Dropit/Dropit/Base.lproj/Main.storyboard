@@ -16,12 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JAQ-cT-iNv">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JAQ-cT-iNv" customClass="BezierPathView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="SEd-ay-nbs" appends="YES" id="8ej-IS-Vna"/>
+                                    <outletCollection property="gestureRecognizers" destination="A8F-xX-dPo" appends="YES" id="Bqy-Kj-rl9"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -38,6 +39,11 @@
                         <action selector="tap:" destination="vXZ-lx-hvc" id="ahg-Me-jl8"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="A8F-xX-dPo">
+                    <connections>
+                        <action selector="pan:" destination="vXZ-lx-hvc" id="c6s-6u-46n"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="424" y="243"/>
         </scene>
